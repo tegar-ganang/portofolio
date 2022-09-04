@@ -1,0 +1,111 @@
+.fredoka {
+    font-family: 'Fredoka', sans-serif;
+  }
+
+  .text-justify {
+    text-align: justify;
+  }
+
+  .text-yellow {
+    color: #DAA306;
+  }
+
+  .fw-500 {
+    font-weight: 500 !important;
+  }
+
+  .btn-yellow {
+    background: #EDE492;
+    color: #064810;
+  }
+
+  .stepper-wrapper {
+    margin-top: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+
+  .stepper-item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+  }
+
+  .stepper-item .step-counter {
+    position: relative;
+    z-index: 5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #ccc;
+    margin-bottom: 6px;
+  }
+
+  .stepper-item.active {
+    font-weight: bold;
+  }
+
+  .stepper-item.completed .step-counter {
+    background-color: #DAA306;
+  }
+
+  .stepper-item.completed::after {
+    position: absolute;
+    content: "";
+    border-bottom: 2px solid #DAA306;
+    width: 100%;
+    top: 5px;
+    z-index: 3;
+  }
+
+  .stepper-item.completed.right::before {
+    position: absolute;
+    content: "";
+    border-bottom: 2px solid #DAA306;
+    width: 100%;
+    top: 5px;
+    z-index: 3;
+  }
+
+  .stepper-item:first-child::before {
+    content: none;
+  }
+
+  .stepper-item:last-child::after {
+    content: none;
+  }
+
+  .navbar-dark .navbar-nav .nav-link {
+    color: white !important;
+  }
+
+  .nav-link.login {
+    background: #EBB826;
+    border-radius: 5px;
+  }
+
+  .nav-link.login:hover {
+    background: #e0ad21;
+    border-radius: 5px;
+  }
+
+  .ft-90 {
+    font-size: 24px;
+    line-height: 29px;
+    color: #048172;
+    transform: rotate(-90deg);
+  }
+
+  .rectangle {
+    position: absolute;
+    width: 100%;
+    height: 30px;
+
+    background: #025b85;
+  }
